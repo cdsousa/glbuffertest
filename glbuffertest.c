@@ -11,8 +11,8 @@ void disp_fps(){
     if (t - t0 >= 200) {
         GLfloat seconds = (t - t0) / 1000.0;
         GLfloat fps = frames / seconds;
-        sprintf(fps_str, "%6.f FPS\n", fps);
-        printf("%6.f FPS\n", fps);
+        sprintf(fps_str, "%6.1f FPS\n", fps);
+        printf("%6.1f FPS\n", fps);
         t0 = t;
         frames = 0;
     }
